@@ -11,4 +11,4 @@ import scrapy
 class BdspiderItem(scrapy.Item):
     title = scrapy.Field()
     abstract = scrapy.Field()
-    url_link = scrapy.Field
+    url_link = scrapy.Field()

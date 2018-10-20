@@ -8,4 +8,7 @@
 
 class PyspiderPipeline(object):
     def process_item(self, item, spider):
+        item['title'] = '标题：' + item['title']
+        item['abstract'] = '摘要：' + item['abstract']
+        item['url_link'] = '链接：' + item['url_link']
         return item
